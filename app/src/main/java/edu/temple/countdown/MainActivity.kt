@@ -49,9 +49,9 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun Countdown(modifier: Modifier = Modifier) {
+fun Countdown(countdownVM: CountdownVM = viewModel(), modifier: Modifier = Modifier) {
 
-    val countdownVM: CountdownVM = viewModel()
+
 
     Column(
         modifier = Modifier.fillMaxSize(),
